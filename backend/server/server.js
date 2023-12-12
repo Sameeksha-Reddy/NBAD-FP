@@ -10,11 +10,10 @@ const bodyParser = require("body-parser");
 const SignupSchema = require("./models/SignupModel");
 const BudgetSchema = require("./models/BudgetModel");
 const ExpenseSchema = require("./models/ExpenseModel");
-let url = "mongodb://127.0.0.1:27017/personal-budget";
+let url = "mongodb+srv://Sammy:trixie@cluster0.klsnvf4.mongodb.net/";
 
 const bcrypt = require("bcrypt");
 const port = 3002;
-const budget = require("/Users/sameekksha/Desktop/PB-Final/pb.json");
 
 app.use(cors());
 app.use(bodyParser.json());

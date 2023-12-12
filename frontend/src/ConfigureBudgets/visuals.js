@@ -56,7 +56,7 @@ function Visuals() {
 
     if (selectedMonth) {
       axios
-        .get(`http://localhost:3002/get-budgets/${userId}?month=${selectedMonth}`, {
+        .get(`http://159.89.52.202:3002/get-budgets/${userId}?month=${selectedMonth}`, {
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -86,7 +86,7 @@ function Visuals() {
 
     if (selectedMonth) {
       axios
-        .get(`http://localhost:3002/get-expenses/${userId}?month=${selectedMonth}`, {
+        .get(`http://159.89.52.202:3002/get-expenses/${userId}?month=${selectedMonth}`, {
           headers: {
             Authorization: `Bearer ${token}`,
           },

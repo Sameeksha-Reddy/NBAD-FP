@@ -124,7 +124,7 @@ const LoginPage = (props) => {
     e.preventDefault();
   
     try {
-      const response = await axios.post('http://localhost:3002/login', loginFormData);
+      const response = await axios.post('http://159.89.52.202:3002/login', loginFormData);
   
       console.log('Login success:', response);
   
@@ -165,12 +165,12 @@ const LoginPage = (props) => {
     }
 
     try {
-      const response = await axios.post('http://localhost:3002/signup', signupFormData);
+      const response = await axios.post('http://159.89.52.202:3002/signup', signupFormData);
 
       setSuccessMessage(response.data.message);
 
       // Log in the user after a successful signup
-      const loginResponse = await axios.post('http://localhost:3002/login', {
+      const loginResponse = await axios.post('http://159.89.52.202:3002/login', {
         username: signupFormData.username,
         password: signupFormData.password,
       });
